@@ -1,0 +1,62 @@
+@import '../../commonStyles.module.scss'; // Importiere die Stile aus commonStyles
+
+
+.header {
+  background-color: var(--theme-color5);
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  border-radius: 15px;
+}
+
+
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  position: relative;  /* Für die fixe Position der Buttons */
+  margin-bottom: 70px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  cursor: pointer; // Hand-Cursor, um zu zeigen, dass das Bild klickbar ist
+}
+
+
+.title {
+  text-align: left; /* Titel linksbündig */
+}
+
+.paragraph {
+  text-align: left; /* Absätze linksbündig */
+}
